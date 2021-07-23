@@ -1,0 +1,12 @@
+.grilla {
+    display: grid;
+    height: 100vh;
+    
+    //comienzo con mobile
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 9% 33% 40% 18%;
+
+    .navbar {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }}
