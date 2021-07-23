@@ -1,0 +1,19 @@
+.footer {
+    background-color: $smoky-black;
+    color: $color-white;
+    &__title {
+        width: 80%;
+        margin: 0 auto;
+        font-family: $raleway;
+        font-size: $x-large;
+        padding: 12px 0 5px 0;
+    }
+
+
+    @include respond-to($bp-md) {
+        &__title {
+            font-size: $xx-large;
+            padding: 30px 20px 5px 0;
+        }
+    }
+}

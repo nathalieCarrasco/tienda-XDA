@@ -1,12 +1,80 @@
 .grilla {
   display: grid;
   height: 100vh;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 1fr;
   grid-template-rows: 9% 33% 40% 18%;
 }
 .grilla .navbar {
   grid-column: 1/3;
   grid-row: 1/2;
+}
+.grilla .header {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.grilla .section {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.grilla .footer {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.grilla .vertical {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+@media (min-width: 768px) {
+  .grilla {
+    grid-template-columns: 94vw 6vw;
+    grid-template-rows: 8vh 33vh 38vh 21vh;
+  }
+  .grilla .navbar {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .grilla .header {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .grilla .section {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .grilla .footer {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .grilla .vertical {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media (min-width: 1200px) {
+  .grilla {
+    grid-template-columns: 39vw 4vw 57vw;
+    grid-template-rows: 10vh 62vh 28vh;
+  }
+  .grilla .navbar {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .grilla .header {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .grilla .section {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .grilla .footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .grilla .vertical {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 }
 
 .navbar {
@@ -152,6 +220,159 @@
   }
   .navbar .navbar__menuBurger {
     display: none;
+  }
+}
+
+.header__img {
+  background: url(/assets/img/imagen1.png);
+  height: 40vh;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header__imagen {
+    height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  .header__imagen {
+    height: 90vh;
+  }
+}
+
+.section {
+  z-index: 20;
+  background-color: #FFF;
+}
+.section__container {
+  padding: 20px 30px;
+}
+.section__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.section__paragraph {
+  line-height: 1.5;
+  font-family: "Old Standard TT", serif;
+  color: #646266;
+  font-size: 16px;
+}
+.section__paragraphNone {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section__container {
+    padding: 20px 70px;
+  }
+  .section__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+  .section__titleCut {
+    display: block;
+  }
+  .section__paragraph {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .section__paragraphNone {
+    display: inline;
+  }
+}
+@media (min-width: 1200px) {
+  .section__container {
+    padding: 70px;
+  }
+  .section__paragraph {
+    line-height: 2;
+    margin: 20px 0;
+    width: 60%;
+  }
+}
+
+.vertical {
+  background-color: #FFF;
+  color: #0C0910;
+}
+.vertical__paragraph {
+  writing-mode: vertical-rl;
+  font-family: "Raleway", sans-serif;
+  font-weight: "700";
+  font-size: 16px;
+  padding: 6px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .vertical__paragraph {
+    margin-top: 60px;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .vertical__paragraph {
+    margin-top: 80px;
+    padding: 18px;
+    font-size: 20px;
+  }
+}
+
+.footer {
+  background-color: #0C0910;
+  color: #FFF;
+}
+.footer__title {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  padding: 12px 0 5px 0;
+}
+@media (min-width: 768px) {
+  .footer__title {
+    font-size: 30px;
+    padding: 30px 20px 5px 0;
+  }
+}
+
+.formulario {
+  background-color: #0C0910;
+  color: #FFF;
+  width: 80%;
+  margin: 0 auto;
+}
+.formulario__legend {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-bottom: 8px;
+}
+.formulario__input {
+  width: 100%;
+  height: 33px;
+  font-family: "Old Standard TT", serif;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .formulario__legend {
+    padding-top: 8px;
+  }
+}
+@media (min-width: 1200px) {
+  .formulario__legend {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+  .formulario__input {
+    width: 60%;
+    height: 35px;
   }
 }
 

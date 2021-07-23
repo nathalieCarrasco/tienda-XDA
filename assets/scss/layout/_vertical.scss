@@ -1,0 +1,30 @@
+.vertical {
+    background-color: $color-white;
+    color: $smoky-black;
+    
+    
+    &__paragraph {
+        writing-mode: vertical-rl;
+        font-family: $raleway;
+        font-weight: $raleway-bold;
+        font-size: $medium;
+        padding: 6px;
+        margin-top: 20px;
+    }
+
+    @include respond-to($bp-md) {
+        &__paragraph {
+            margin-top: 60px;
+            padding: 10px;
+            font-size: $large;
+        }
+    }
+
+    @include respond-to($bp-lg) {
+        &__paragraph {
+            margin-top: 80px;
+            padding: 18px;
+            font-size: $x-large;
+        }
+    }
+}

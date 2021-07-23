@@ -1,0 +1,36 @@
+.formulario {
+    background-color: $smoky-black;
+    color: $color-white;
+    width: 80%;
+    margin: 0 auto;
+    &__legend {
+        font-family: $raleway;
+        font-size: $small;
+        font-weight: lighter;
+        padding-bottom: 8px;
+    }
+    &__input {
+        width: 100%;
+        height: 33px;
+        font-family: $old;
+        padding-left: 10px;
+    }
+
+
+    @include respond-to($bp-md) {
+        &__legend {
+            padding-top: 8px;
+        }
+    }
+
+    @include respond-to($bp-lg) {
+        &__legend {
+            padding-top: 15px;
+            font-size: $medium;
+        }
+        &__input {
+            width: 60%;
+            height: 35px;
+        }
+    }
+}

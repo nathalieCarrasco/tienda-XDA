@@ -1,0 +1,59 @@
+.section{
+    z-index: 20;
+    background-color: $color-white;
+    
+    &__container {
+        padding: 20px 30px;
+    }
+    &__title {
+        font-family: $raleway;
+        font-size: $xx-large;
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+    &__paragraph {
+        line-height: 1.5;
+        font-family: $old;
+        color: $quick-silver;
+        font-size: $medium;
+    }
+    &__paragraphNone {
+        display: none;
+    }
+
+
+
+    @include respond-to($bp-md) {
+        &__container {
+            padding: 20px 70px;
+        }
+        &__title {
+            font-size: $xxx-large;
+            text-transform: uppercase;
+            line-height: 1.3;
+        }
+        &__titleCut {
+            display: block;
+        }
+        &__paragraph {
+            margin-top: 10px;
+            width: 80%
+        }
+        &__paragraphNone {
+            display: inline;
+        }
+    }
+
+
+
+    @include respond-to($bp-lg) {
+        &__container {
+            padding: 70px;
+        }
+        &__paragraph {
+            line-height: 2;
+            margin: 20px 0;
+            width: 60%
+        }
+    }
+}
