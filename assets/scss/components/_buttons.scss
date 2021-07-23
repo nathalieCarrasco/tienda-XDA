@@ -1,0 +1,30 @@
+.button {
+    text-decoration: none;
+    border: none;
+    margin: 15px 0;
+    padding: 8px 17px;
+    font-family: $old;
+    font-weight: $old-bold;
+    font-size: $medium;
+    color: $smoky-black;
+    background-color: $color-white;
+    border: 1.5px solid $smoky-black;
+}
+
+
+@include respond-to($bp-md) {
+    .button {
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@include respond-to($bp-lg) {
+    .button {
+        padding: 12px 30px;
+        margin-top: 20px;
+        font-size: $large;
+    }
+}

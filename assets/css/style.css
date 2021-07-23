@@ -1,8 +1,34 @@
+.button {
+  text-decoration: none;
+  border: none;
+  margin: 15px 0;
+  padding: 8px 17px;
+  font-family: "Old Standard TT", serif;
+  font-weight: "700";
+  font-size: 16px;
+  color: #0C0910;
+  background-color: #FFF;
+  border: 1.5px solid #0C0910;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 8px 20px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .button {
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
 .grilla {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 9% 33% 40% 18%;
+  grid-template-rows: 10% 35% 35% 20%;
 }
 .grilla .navbar {
   grid-column: 1/3;
@@ -52,8 +78,8 @@
 }
 @media (min-width: 1200px) {
   .grilla {
-    grid-template-columns: 39vw 4vw 57vw;
-    grid-template-rows: 10vh 62vh 28vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 35% 35%;
   }
   .grilla .navbar {
     grid-column: 1/4;
@@ -224,8 +250,6 @@
 }
 
 .header__img {
-  background: url(/assets/img/imagen1.png);
-  height: 40vh;
   width: 100%;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -319,7 +343,7 @@
 @media (min-width: 1200px) {
   .vertical__paragraph {
     margin-top: 80px;
-    padding: 18px;
+    padding: 15px;
     font-size: 20px;
   }
 }

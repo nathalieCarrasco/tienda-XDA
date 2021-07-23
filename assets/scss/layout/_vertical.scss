@@ -23,7 +23,7 @@
     @include respond-to($bp-lg) {
         &__paragraph {
             margin-top: 80px;
-            padding: 18px;
+            padding: 15px;
             font-size: $x-large;
         }
     }
