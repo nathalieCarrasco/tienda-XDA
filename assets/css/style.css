@@ -270,7 +270,7 @@ body {
 }
 @media (min-width: 1200px) {
   .header__imagen {
-    height: 90vh;
+    width: 100%;
   }
 }
 
