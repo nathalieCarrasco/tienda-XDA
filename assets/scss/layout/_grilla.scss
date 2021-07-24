@@ -69,6 +69,8 @@
         .header {
             grid-column: 3/4;
             grid-row: 2/4;
+            justify-self:stretch;
+            align-self: stretch;
         }
         .section {
             grid-column: 1/3;
