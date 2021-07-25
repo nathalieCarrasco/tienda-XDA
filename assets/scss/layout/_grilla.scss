@@ -33,8 +33,8 @@
 
 
     @include respond-to($bp-md) {
-        grid-template-columns: 94vw 6vw;
-        grid-template-rows: 8vh 33vh 38vh 21vh;
+        grid-template-columns: 95vw 5vw;
+        grid-template-rows: 10vh 35vh 35vh 20vh;
         .navbar {
             grid-column: 1/3;
             grid-row: 1/2;
@@ -61,7 +61,7 @@
 
     @include respond-to($bp-lg) {
         grid-template-columns: 39vw 4vw 57vw;
-        grid-template-rows:  10vh 62vh 28vh;
+        grid-template-rows:  10vh 70vh 20vh;
         .navbar {
             grid-column: 1/4;
             grid-row: 1/2;
@@ -69,8 +69,6 @@
         .header {
             grid-column: 3/4;
             grid-row: 2/4;
-            justify-self:stretch;
-            align-self: stretch;
         }
         .section {
             grid-column: 1/3;
